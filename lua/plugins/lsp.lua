@@ -5,6 +5,8 @@ return {
     servers = {
       pyright = {
         mason = false,
+        -- Using Ruff's import organizer
+        disableOrganizeImports = true,
       },
       basedpyright = {},
       ruff = {},
