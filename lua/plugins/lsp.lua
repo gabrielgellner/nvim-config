@@ -7,6 +7,7 @@ return {
         mason = false,
         -- Using Ruff's import organizer
         disableOrganizeImports = true,
+        autostart = false,
       },
       basedpyright = {},
       ruff = {},
