@@ -5,13 +5,17 @@ vim.g.lazyvim_python_lsp = "basedpyright"
 -- vim.g.lazyvim_python_ruff = "ruff"
 vim.g.snacks_animate = false
 
+-- rust baby
+vim.g.lazyvim_rust_diagnostics = "rust-analyzer"
+
+-- nvim 0.11 diagnostics layout
 vim.diagnostic.config({
   -- Use the default configuration
-  virtual_lines = true,
+  -- virtual_lines = false,
 
   -- Alternatively, customize specific options
-  -- virtual_lines = {
-  --  -- Only show virtual line diagnostics for the current cursor line
-  --  current_line = true,
-  -- },
+  virtual_lines = {
+    -- Only show virtual line diagnostics for the current cursor line
+    current_line = true,
+  },
 })
